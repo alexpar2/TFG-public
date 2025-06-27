@@ -1,0 +1,96 @@
+/* src/Noticias/GoogleApi/BuscarEnGoogle.css */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.google-logo {
+  width: 272px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 584px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4285f4;
+  box-shadow: 0 2px 6px rgba(66, 133, 244, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.search-button,
+.visualize-button,
+.download-button {
+  padding: 10px 24px;
+  font-size: 18px;
+  border-radius: 24px;
+  margin-top: 10px;
+}
+
+.search-button {
+  background-color: #4285f4;
+  border: none;
+  color: white;
+}
+
+.visualize-button {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+}
+
+.download-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cancel-button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-size: 18px;
+  border-radius: 24px;
+  }
+  

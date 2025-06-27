@@ -1,0 +1,228 @@
+
+/* 
+:root {
+    --primary-color: #0C1C1A; /* Verde oscuro 
+    --secondary-color: #8EBEE4; /* Azul claro 
+    --accent-color: #F4B262; /* Naranja 
+    --text-light: #F1EBE7; /* Beige claro 
+    --text-dark: #0C1C1A; /* Verde oscuro 
+    --background-light: #F1EBE7; /* Beige claro 
+    --background-dark: #497B9A; /* Azul oscuro 
+}
+
+.navbar {
+    background-color: var(--background-dark) !important;
+}
+  */
+:root {
+    --primary-color: #031420;
+    --secondary-color: #323639;
+    --accent-color: #394047;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --background-light: #222526;
+    --background-dark: #343a40;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    font-family: 'Monaco', monospace;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
+.container {
+    background-color: var(--background-light);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.index {
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.index h5 {
+    color: var(--text-light);
+}
+.index a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.index a:hover {
+    color: var(--primary-color); /* Cambiar el color al pasar el ratón */
+    text-decoration: underline;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-light);
+}
+
+.button-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+}
+
+.button-secondary {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-light);
+}
+
+.button-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.card {
+    background-color: var(--background-light);
+    border: 1px solid var(--accent-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-text {
+    color: var(--text-dark);
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Añadir esta línea */
+    justify-content: center;
+    align-items: center;
+    background: rgba(30, 3, 3, 0.8);
+    z-index: 1000;
+    gap: 20px; /* Opcional, para añadir espacio entre el spinner y el botón */
+}
+
+.loading-overlay .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--primary-color);
+    border-top: 5px solid var(--text-light);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 992px) {
+    .index {
+        display: none;
+    }
+}
+
+.button-insertar {
+    background-color: #13344C; /* Color primario */
+    border: none;
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.button-insertar:hover {
+    background-color: #10293E; /* Color primario oscuro al pasar el ratón */
+    color: var(--text-light);
+}
+
+.button-visualizar {
+    background-color: #7FBBDC; /* Color secundario */
+    border: none;
+    color: var(--text-dark);
+    transition: background-color 0.3s ease;
+}
+
+.button-visualizar:hover {
+    background-color: #6A9CBC; /* Color secundario oscuro al pasar el ratón */
+    color: var(--text-light);
+}
+
+.button-descargar {
+    background-color: #5B6570; /* Color acento */
+    border: none;
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.button-descargar:hover {
+    background-color: #4A515B; /* Color acento oscuro al pasar el ratón */
+    color: var(--text-light);
+}
+
+.reddit-title,
+.mastodon-title {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: var(--primary-color);
+}
+
+.navbar-nav .dropdown-item {
+  color: var(--text-light);
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+}
+
+/* Estilos para el DropdownButton */
+.dropdown-toggle {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+}
+
+/* Estilos para los elementos del menú desplegable */
+.dropdown-menu {
+    background-color: var(--background-light);
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
