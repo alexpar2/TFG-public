@@ -62,8 +62,8 @@ google_news = GNews(max_results=100)
 
 # conmastodon = Mastodon(client_id = 'pytooter_clientcred.secret',)
 # conmastodon.log_in(
-#     'e.vilarperez@go.ugr.es',
-#     'KydCgcaRJ.854jr',
+#     'xxxxxx',
+#     'xxxxxx',
 #     to_file = 'pytooter_usercred.secret'
 # )
 
